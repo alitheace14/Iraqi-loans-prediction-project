@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='test.css') }}">
+</head>
+<body>
+
+    <!-- Display the result if available -->
+    {% if result %}
+        <h1>Loan Status: {{ result }}</h1>
+    {% else %}
+        <h1>Loan Application Submitted</h1>
+    {% endif %}
+
+</body>
+</html>
